@@ -253,6 +253,7 @@ class CGnet(nn.Module):
                                     create_graph=True,
                                     retain_graph=True)
         print(torch.sum(energy))
+        print(energy.shape)
         print(coordinates.shape)
         print(force)
         return energy, force[0]

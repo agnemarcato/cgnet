@@ -252,9 +252,9 @@ class CGnet(nn.Module):
                                     coordinates,
                                     create_graph=True,
                                     retain_graph=True)
-        print(torch.sum(energy).shape)
+        print(torch.sum(energy))
         print(coordinates.shape)
-        print(len(force))
+        print(force)
         return energy, force[0]
 
     def mount(self, device):

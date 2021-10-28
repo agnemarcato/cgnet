@@ -252,9 +252,9 @@ class CGnet(nn.Module):
                                     coordinates,
                                     create_graph=True,
                                     retain_graph=True)
-        print("Energy_shape: %r", %energy.shape)
-        print("Coordinates_shape: %r", %coordinates.shape)
-        print("Force_shape: %r", %force.shape)
+        print("Energy_shape: %r"  %energy.shape)
+        print("Coordinates_shape: %r" %coordinates.shape)
+        print("Force_shape: %r" %force.shape)
         return energy, force[0]
 
     def mount(self, device):
